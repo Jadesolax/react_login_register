@@ -3,6 +3,7 @@ import './App.css';
 import React from 'react';
 import Login from "./Components/Login/Login"
 import Register from './Components/Register/Register';
+import Menu from "./Components/Menu/Menu";
 
 class App extends React.Component{
 
@@ -124,6 +125,7 @@ class App extends React.Component{
     return (
       <div className="App">
         <header className="App-header">
+        <Menu appname='Simple Application'></Menu>
           <select onChange={(event) => this.changePage(event)}>
               {pageOptions}
           </select>
